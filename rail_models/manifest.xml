@@ -1,0 +1,14 @@
+<package>
+  <description brief="Gazebo files that can be used in a Gazebo simulation environment.">Gazebo simulation files developed by the RAIL group at WPI that contain models which can be used in simulated robotic environments.</description>
+  <author>Russell Toris</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes="" />
+  <url>http://ros.org/wiki/rail_models</url>
+
+  <depend package="gazebo" />
+
+  <export>
+    <gazebo gazebo_media_path="${prefix}" />
+  </export>
+</package>
+

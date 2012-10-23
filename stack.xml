@@ -1,0 +1,10 @@
+<stack>
+  <description brief=""></description>
+  <author>Russell Toris</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rail_gazebo</url>
+
+  <depend stack="ros" />
+</stack>
+

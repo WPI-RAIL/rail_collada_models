@@ -1,0 +1,18 @@
+<!--
+  Author: Russell Toris, Worcester Polytechnic Institute
+  Version: October 23, 2012
+-->
+
+<gazebo version="1.0">
+  <model name="banner" static="true">
+    <origin pose="0.0 0.0 0.0 0.0 0.0 0.0" />
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh filename="banner/banner.dae" scale="0.0254 0.0254 0.0254" />
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</gazebo>
+

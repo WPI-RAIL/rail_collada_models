@@ -1,0 +1,25 @@
+<!--
+  Author: Russell Toris, Worcester Polytechnic Institute
+  Version: October 23, 2012
+-->
+
+<gazebo version="1.0">
+  <model name="lab" static="true">
+    <origin pose="0.0 0.0 0.0 0.0 0.0 0.0" />
+
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh filename="lab/lab_full.dae" scale="0.0254 0.0254 0.0254" />
+        </geometry>
+      </visual>
+
+      <collision name="collision">
+        <geometry>
+          <mesh filename="lab/lab_full.stl" scale="0.0254 0.0254 0.0254" />
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</gazebo>
+
