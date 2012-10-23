@@ -1,0 +1,25 @@
+<!--
+  Author: Russell Toris, Worcester Polytechnic Institute
+  Version: October 23, 2012
+-->
+
+<launch>
+  <!-- decide here if sim_time and the GUI should be used -->
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+
+  <!-- set use_sim_time flag -->
+  <group if="$(arg use_sim_time)">
+    <param name="/use_sim_time" value="true" />
+  </group>
+
+  <!-- start the empty, throttled world (paused) -->
+  <node name="gazebo" pkg="gazebo" type="gazebo" args="-u $(find rail_worlds)/worlds/youbot.world" respawn="false" output="screen" />
+  
+  <!-- check if the GUI should be launched -->
+  <group if="$(arg gui)">
+    <node name="gazebo_gui" pkg="gazebo" type="gui" respawn="false" output="screen" />
+  </group>
+</launch>
+
+

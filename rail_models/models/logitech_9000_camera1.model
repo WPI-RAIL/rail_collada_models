@@ -1,0 +1,45 @@
+<!--
+  Author: Russell Toris, Worcester Polytechnic Institute
+  Version: October 23, 2012
+-->
+
+<gazebo version="1.0">
+  <model name="logitech_9000_camera1" static="true">
+    <link name="link">
+      <origin pose="0.0 0.0 0.0 0.0 0.0 0.0" />
+
+      <visual name="visual">
+        <geometry>
+          <box size="0.1 0.1 0.1" />
+        </geometry>
+      </visual>
+
+      <sensor name="logitech_9000_camera1" type="camera" always_on="1" update_rate="30.0" visualize="true">
+        <camera>
+          <horizontal_fov angle="1.0647" />
+          <image width="800" height="600" format="R8G8B8" />
+          <clip near="0.1" far="10" />
+        </camera>
+        <plugin name="overhead_camera_plugin" filename="libgazebo_ros_camera.so">
+          <alwaysOn>true</alwaysOn>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <updateRate>25.0</updateRate>
+          <cameraName>logitech_9000_camera1</cameraName>
+          <frameName>logitech_9000_camera1</frameName>
+          <CxPrime>400.5</CxPrime>
+          <Cx>400.5</Cx>
+          <Cy>300.5</Cy>
+          <hackBaseline>0</hackBaseline>
+          <focalLength>679.027076</focalLength>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </link>
+  </model>
+</gazebo>
+
