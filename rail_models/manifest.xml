@@ -11,4 +11,3 @@
     <gazebo gazebo_media_path="${prefix}" />
   </export>
 </package>
-
