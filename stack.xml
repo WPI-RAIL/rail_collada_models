@@ -6,4 +6,5 @@
   <url>http://ros.org/wiki/rail_gazebo</url>
 
   <depend stack="ros" />
+  <depend stack="simulator_gazebo" />
 </stack>
