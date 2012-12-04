@@ -6,6 +6,7 @@
   <url>http://ros.org/wiki/rail_worlds</url>
 
   <depend package="gazebo" />
+  <depend package="rail_models" />
 
   <export>
     <gazebo gazebo_media_path="${prefix}" />
