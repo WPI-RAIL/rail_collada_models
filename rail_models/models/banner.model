@@ -1,17 +1,19 @@
 <!--
   Author: Russell Toris, Worcester Polytechnic Institute
-  Version: October 23, 2012
+  Version: May 03, 2013
 -->
-
-<gazebo version="1.0">
-  <model name="banner" static="true">
-    <origin pose="0.0 0.0 0.0 0.0 0.0 0.0" />
-    <link name="link">
-      <visual name="visual">
-        <geometry>
-          <mesh filename="banner/banner.dae" scale="0.0254 0.0254 0.0254" />
-        </geometry>
-      </visual>
-    </link>
-  </model>
-</gazebo>
+<sdf version="1.3">
+    <model name="banner">
+        <static>true</static>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+        <link name="link">
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>banner/banner.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>

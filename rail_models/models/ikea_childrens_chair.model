@@ -1,24 +1,27 @@
 <!--
   Author: Russell Toris, Worcester Polytechnic Institute
-  Version: October 23, 2012
+  Version: May 03, 2013
 -->
-
-<gazebo version="1.0">
-  <model name="ikea_childrens_chair" static="true">
-    <origin pose="0.0 0.0 0.0 0.0 0.0 0.0" />
-
-    <link name="link">
-      <visual name="visual">
-        <geometry>
-          <mesh filename="ikea_childrens_table/chair.dae" scale="0.0254 0.0254 0.0254" />
-        </geometry>
-      </visual>
-      
-      <collision name="collision">
-        <geometry>
-          <mesh filename="ikea_childrens_table/chair.stl" scale="0.0254 0.0254 0.0254" />
-        </geometry>
-      </collision>
-    </link>
-  </model>
-</gazebo>
+<sdf version="1.3">
+    <model name="ikea_childrens_chair">
+        <static>true</static>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+        <link name="link">
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>ikea_childrens_table/chair.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>ikea_childrens_table/chair.stl</uri>
+                        <scale>0.0254 0.0254 0.0254</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
