@@ -1,4 +1,25 @@
-cmake_minimum_required(VERSION 2.4.6)
-include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+cmake_minimum_required(VERSION 2.8.3)
+project(rail_collada_models)
 
-rosbuild_make_distribution(0.1.0)
+## Find catkin macros and libraries
+## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
+## is used, also find other catkin packages
+find_package(catkin REQUIRED)
+
+###################################################
+## Declare things to be passed to other projects ##
+###################################################
+
+## LIBRARIES: libraries you create in this project that dependent projects also need
+## CATKIN_DEPENDS: catkin_packages dependent projects also need
+## DEPENDS: system dependencies of this project that dependent projects also need
+catkin_package()
+
+#############
+## Install ##
+#############
+
+## Install meshes
+install(DIRECTORY meshes/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes
+)
