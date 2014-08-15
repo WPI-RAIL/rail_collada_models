@@ -1,0 +1,8 @@
+<launch>  
+  <param name="ilab_description" command="$(find xacro)/xacro.py '$(find rail_collada_models)/urdf/ilab.urdf.xacro'" />
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="ilab_state_publisher" output="screen">
+    <remap from="robot_description" to="ilab_description" />
+    <param name="publish_frequency" type="double" value="5.0" />
+  </node>
+</launch>
