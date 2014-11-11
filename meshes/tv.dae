@@ -711,13 +711,13 @@
     </library_effects>
     <library_images>
         <image id="ID5">
-            <init_from>TV/dark_black.jpg</init_from>
+            <init_from>materials/dark_black.jpg</init_from>
         </image>
         <image id="ID18">
-            <init_from>TV/metal.jpg</init_from>
+            <init_from>materials/metal.jpg</init_from>
         </image>
         <image id="ID87">
-            <init_from>TV/black.jpg</init_from>
+            <init_from>materials/black.jpg</init_from>
         </image>
     </library_images>
     <scene>

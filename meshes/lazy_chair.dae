@@ -504,10 +504,10 @@
     </library_effects>
     <library_images>
         <image id="ID5">
-            <init_from>lazyChair/metal.jpg</init_from>
+            <init_from>materials/metal.jpg</init_from>
         </image>
         <image id="ID26">
-            <init_from>lazyChair/leather.jpg</init_from>
+            <init_from>materials/leather.jpg</init_from>
         </image>
     </library_images>
     <scene>

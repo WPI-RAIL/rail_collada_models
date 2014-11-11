@@ -1055,16 +1055,16 @@
     </library_effects>
     <library_images>
         <image id="ID5">
-            <init_from>kitchen-counter/black.jpg</init_from>
+            <init_from>materials/black.jpg</init_from>
         </image>
         <image id="ID18">
-            <init_from>kitchen-counter/countertop.jpg</init_from>
+            <init_from>materials/countertop.jpg</init_from>
         </image>
         <image id="ID31">
-            <init_from>kitchen-counter/metal.jpg</init_from>
+            <init_from>materials/metal.jpg</init_from>
         </image>
         <image id="ID66">
-            <init_from>kitchen-counter/dark_black.jpg</init_from>
+            <init_from>materials/dark_black.jpg</init_from>
         </image>
     </library_images>
     <scene>

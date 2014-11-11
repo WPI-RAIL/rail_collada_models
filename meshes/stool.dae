@@ -1378,7 +1378,7 @@
     </library_effects>
     <library_images>
         <image id="ID5">
-            <init_from>stool/wood.jpg</init_from>
+            <init_from>materials/wood.jpg</init_from>
         </image>
     </library_images>
     <scene>
