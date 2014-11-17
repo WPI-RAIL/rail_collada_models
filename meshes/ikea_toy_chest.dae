@@ -539,7 +539,7 @@
             <init_from>materials/real_wood.jpg</init_from>
         </image>
         <image id="ID24">
-            <init_from>materials/painted_wood.jpg</init_from>
+            <init_from>materials/painted-wood.jpg</init_from>
         </image>
     </library_images>
     <scene>
