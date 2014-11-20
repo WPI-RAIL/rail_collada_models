@@ -7917,16 +7917,16 @@
     </library_effects>
     <library_images>
         <image id="ID16">
-            <init_from>../textures/wood-oak-horizontal.jpg</init_from>
+            <init_from>materials/wood-oak-horizontal.jpg</init_from>
         </image>
         <image id="ID39">
-            <init_from>../textures/wood-oak-vertical.jpg</init_from>
+            <init_from>materials/wood-oak-vertical.jpg</init_from>
         </image>
         <image id="ID158">
-            <init_from>../textures/wood-pine.jpg</init_from>
+            <init_from>materials/wood-pine.jpg</init_from>
         </image>
         <image id="ID969">
-            <init_from>../textures/wood-oak-horizontal.jpg</init_from>
+            <init_from>materials/wood-oak-horizontal.jpg</init_from>
         </image>
     </library_images>
     <scene>

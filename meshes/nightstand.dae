@@ -11,10 +11,10 @@
    </asset>
    <library_images>
       <image id="Material1-image" name="Material1-image">
-         <init_from>../textures/nightstand.jpg</init_from>
+         <init_from>materials/nightstand.jpg</init_from>
       </image>
       <image id="Material2-image" name="Material2-image">
-         <init_from>../textures/wood-mahogany.jpg</init_from>
+         <init_from>materials/wood-mahogany.jpg</init_from>
       </image>
    </library_images>
    <library_materials>

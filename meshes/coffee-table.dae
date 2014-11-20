@@ -11,13 +11,13 @@
    </asset>
    <library_images>
       <image id="material0-image" name="material0-image">
-         <init_from>../textures/newspaper.jpg</init_from>
+         <init_from>materials/newspaper.jpg</init_from>
       </image>
       <image id="material2-image" name="material2-image">
-         <init_from>../textures/wood-mahogany.jpg</init_from>
+         <init_from>materials/wood-mahogany.jpg</init_from>
       </image>
       <image id="material3-image" name="material3-image">
-         <init_from>../textures/glass.jpg</init_from>
+         <init_from>materials/glass.jpg</init_from>
       </image>
    </library_images>
    <library_materials>

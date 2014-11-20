@@ -11,16 +11,16 @@
    </asset>
    <library_images>
       <image id="material0-image" name="material0-image">
-         <init_from>../textures/wood-mahogany-polished.jpg</init_from>
+         <init_from>materials/wood-mahogany-polished.jpg</init_from>
       </image>
       <image id="material1-image" name="material1-image">
-         <init_from>../textures/fabric-aqua.jpg</init_from>
+         <init_from>materials/fabric-aqua.jpg</init_from>
       </image>
       <image id="material2-image" name="material2-image">
-         <init_from>../textures/particle-board.jpg</init_from>
+         <init_from>materials/particle-board.jpg</init_from>
       </image>
       <image id="material3-image" name="material3-image">
-         <init_from>../textures/wood-mahogany-polished.jpg</init_from>
+         <init_from>materials/wood-mahogany-polished.jpg</init_from>
       </image>
    </library_images>
    <library_materials>

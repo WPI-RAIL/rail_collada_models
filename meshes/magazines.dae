@@ -11,25 +11,25 @@
    </asset>
    <library_images>
       <image id="material_0_1_0-image" name="material_0_1_0-image">
-         <init_from>../textures/carpet-blue.jpg</init_from>
+         <init_from>materials/carpet-blue.jpg</init_from>
       </image>
       <image id="material_1_2_0-image" name="material_1_2_0-image">
-         <init_from>../textures/stone-wall.jpg</init_from>
+         <init_from>materials/stone-wall.jpg</init_from>
       </image>
       <image id="material_2_3_0-image" name="material_2_3_0-image">
-         <init_from>../textures/book-page-1.jpg</init_from>
+         <init_from>materials/book-page-1.jpg</init_from>
       </image>
       <image id="material_4_4_0-image" name="material_4_4_0-image">
-         <init_from>../textures/book-page-2.jpg</init_from>
+         <init_from>materials/book-page-2.jpg</init_from>
       </image>
       <image id="material_6_5_0-image" name="material_6_5_0-image">
-         <init_from>../textures/magazine-1.jpg</init_from>
+         <init_from>materials/magazine-1.jpg</init_from>
       </image>
       <image id="material_7_6_0-image" name="material_7_6_0-image">
-         <init_from>../textures/magazine-2.jpg</init_from>
+         <init_from>materials/magazine-2.jpg</init_from>
       </image>
       <image id="material_9_7_0-image" name="material_9_7_0-image">
-         <init_from>../textures/magazine-3.jpg</init_from>
+         <init_from>materials/magazine-3.jpg</init_from>
       </image>
    </library_images>
    <library_materials>
