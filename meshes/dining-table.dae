@@ -14,7 +14,7 @@
          <init_from>materials/wood-mahogany-polished.jpg</init_from>
       </image>
       <image id="material1-image" name="material1-image">
-         <init_from>materials/fabric-aqua.jpg</init_from>
+         <init_from>materials/fabric-pattern.jpg</init_from>
       </image>
       <image id="material2-image" name="material2-image">
          <init_from>materials/particle-board.jpg</init_from>
