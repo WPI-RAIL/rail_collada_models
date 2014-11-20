@@ -11,16 +11,16 @@
    </asset>
    <library_images>
       <image id="material_5_4_0-image" name="material_5_4_0-image">
-         <init_from>../textures/metal-vertical.jpg</init_from>
+         <init_from>materials/metal-vertical.jpg</init_from>
       </image>
       <image id="material_6_3_0-image" name="material_6_3_0-image">
-         <init_from>../textures/metal-vertical.jpg</init_from>
+         <init_from>materials/metal-vertical.jpg</init_from>
       </image>
       <image id="material_10_1_0-image" name="material_10_1_0-image">
-         <init_from>../textures/wood-mahogany-polished.jpg</init_from>
+         <init_from>materials/wood-mahogany-polished.jpg</init_from>
       </image>
       <image id="material_11_2_0-image" name="material_11_2_0-image">
-         <init_from>../textures/metal-vertical.jpg</init_from>
+         <init_from>materials/metal-vertical.jpg</init_from>
       </image>
    </library_images>
    <library_materials>
