@@ -11,13 +11,13 @@
    </asset>
    <library_images>
       <image id="material_0_2_0-image" name="material_0_2_0-image">
-         <init_from>../textures/wallpaper-red-dots.jpg</init_from>
+         <init_from>materials/wallpaper-red-dots.jpg</init_from>
       </image>
       <image id="material_0_2_8-image" name="material_0_2_8-image">
-         <init_from>../textures/wallpaper-red-dots.jpg</init_from>
+         <init_from>materials/wallpaper-red-dots.jpg</init_from>
       </image>
       <image id="material_2_1_8-image" name="material_2_1_8-image">
-         <init_from>../textures/fabric-red.jpg</init_from>
+         <init_from>materials/fabric-red.jpg</init_from>
       </image>
    </library_images>
    <library_materials>
