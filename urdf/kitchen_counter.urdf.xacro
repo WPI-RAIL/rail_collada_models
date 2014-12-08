@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="kitchen_counter" params="parent *origin">
+    <joint name="${parent}_kitchen_counter_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="kitchen_counter_link" />
+    </joint>
+
+    <link name="kitchen_counter_link">
+      <visual>
+        <origin xyz="-1.229 .323 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rail_collada_models/meshes/kitchen_counter.dae" />
+        </geometry>
+      </visual>
+    </link>
+  </xacro:macro>
+</root>

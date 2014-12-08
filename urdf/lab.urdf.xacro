@@ -11,7 +11,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rail_collada_models/meshes/lab/lab.dae" />
+<!--          <mesh filename="package://rail_collada_models/meshes/lab.dae" /> -->
         </geometry>
       </visual>
     </link>

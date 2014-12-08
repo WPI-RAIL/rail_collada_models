@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="coffee_table" params="parent *origin">
+    <joint name="${parent}_coffee_table_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="coffee_table_link" />
+    </joint>
+
+    <link name="coffee_table_link">
+      <visual>
+        <origin xyz="0.527 -2.546 0" rpy="0 0 ${M_PI/2}" />
+        <geometry>
+          <mesh filename="package://rail_collada_models/meshes/coffee_table.dae" />
+        </geometry>
+      </visual>
+    </link>
+  </xacro:macro>
+</root>
