@@ -23,16 +23,11 @@
       <child link="sink_link"/>
     </joint>
     <link name="sink_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.1"/>
-        </geometry>
-      </visual>
     </link>
 
     <!-- Sink Nav Goal placed half of Carl's length in front of the middle of the sink-->
     <joint name="${parent}_sink_nav_goal_joint" type="fixed">
-      <origin xyz="0 0.55 0" rpy="0 0 0"/>
+      <origin xyz="0 0.55 0" rpy="0 0 ${M_PI}"/>
       <parent link="kitchen_counter_link" />
       <child link="sink_nav_goal_link"/>
     </joint>
@@ -45,14 +40,9 @@
       <child link="kitchen_counter_left_surface_link"/>
     </joint>
     <link name="kitchen_counter_left_surface_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.1"/>
-        </geometry>
-      </visual>
     </link>
     <joint name= "${parent}_kitchen_counter_left_nav_goal_joint" type="fixed">
-      <origin xyz="-.6 0.55 0" rpy="0 0 0"/>
+      <origin xyz="-.6 0.55 0" rpy="0 0 ${M_PI}"/>
       <parent link="kitchen_counter_link" />
       <child link="kitchen_counter_left_nav_goal_link"/>
     </joint>
@@ -65,14 +55,9 @@
       <child link="kitchen_counter_right_surface_link"/>
     </joint>
     <link name="kitchen_counter_right_surface_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.1"/>
-        </geometry>
-      </visual>
     </link>
     <joint name="${parent}_kitchen_counter_right_nav_goal_joint" type="fixed">
-      <origin xyz="0.6 0.55 0" rpy="0 0 0"/>
+      <origin xyz="0.6 0.55 0" rpy="0 0 ${M_PI}"/>
       <parent link="kitchen_counter_link" />
       <child link="kitchen_counter_right_nav_goal_link"/>
     </joint>    

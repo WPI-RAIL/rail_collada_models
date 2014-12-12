@@ -3,11 +3,6 @@
   <xacro:macro name="nav_goal" params="prefix">
 
     <link name="${prefix}_nav_goal_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.01"/>
-        </geometry>
-      </visual>
     </link>
 
   </xacro:macro>

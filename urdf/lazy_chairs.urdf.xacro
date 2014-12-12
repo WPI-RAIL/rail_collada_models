@@ -23,15 +23,5 @@
         </geometry>
       </visual>
     </link>
-
-    <joint name="${parent}_lazy_chair_${num}_nav_goal" type="fixed">
-      <origin xyz="0 .84 0" rpy="0 0 0"/>
-      <parent link="lazy_chair_${num}_link"/>
-      <child link="lazy_chair_${num}_nav_goal_link"/>
-    </joint>
-
-    <xacro:nav_goal prefix="lazy_chair_${num}"/>
   </xacro:macro>
-
-
 </root>

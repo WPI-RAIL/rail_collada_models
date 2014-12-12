@@ -4,7 +4,7 @@
 
     <!-- Coffee table -->
     <joint name="${parent}_coffee_table_joint" type="fixed">
-      <origin xyz="3.345 2.99 0" rpy="0 0 ${M_PI/2}" />
+      <origin xyz="3.345 2.99 0" rpy="0 0 -${M_PI/2}" />
       <parent link="${parent}" />
       <child link="coffee_table_link" />
     </joint>
@@ -17,7 +17,7 @@
     </link>
 
     <joint name="${parent}_coffee_table_surface_joint" type="fixed">
-      <origin xyz="0 0 0.405" rpy="0 0 0"/>
+      <origin xyz="0 0 0.41" rpy="0 0 0"/>
       <parent link="coffee_table_link"/>
       <child link="coffee_table_surface_link"/>
     </joint>
@@ -31,7 +31,7 @@
 
     <!-- coffee table nav goal, placed half of carl's length in front of the long side near the coffee_table2-->
     <joint name="${parent}_coffee_table_nav_goal" type="fixed">
-      <origin xyz="0 0.6 0" rpy="0 0 0"/>
+      <origin xyz="0 -0.6 0" rpy="0 0 0"/>
       <parent link="coffee_table_link"/>
       <child link="coffee_table_nav_goal_link"/>
     </joint>

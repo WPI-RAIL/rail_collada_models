@@ -21,12 +21,7 @@
       <parent link="kitchen_table_link"/>
       <child link="kitchen_table_surface_link"/>
     </joint>
-      <link name="kitchen_table_surface_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.1"/>
-        </geometry>
-      </visual>
+    <link name="kitchen_table_surface_link">
     </link>
 
     <!-- kitchen table nav goal, placed half of carl's length in front of the side near the couch-->

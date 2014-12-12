@@ -2,14 +2,13 @@
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="couch" params="parent *origin">
     <joint name="${parent}_couch_joint" type="fixed">
-      <xacro:insert_block name="origin" />
+      <origin xyz="4.497 2.94 0" rpy="0 0 ${M_PI/2}" />
       <parent link="${parent}" />
       <child link="couch_link" />
     </joint>
 
     <link name="couch_link">
       <visual>
-        <origin xyz="4.497 2.94 0" rpy="0 0 ${M_PI/2}" />
         <geometry>
           <mesh filename="package://rail_collada_models/meshes/couch.dae" />
         </geometry>

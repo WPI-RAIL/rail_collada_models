@@ -28,7 +28,7 @@
     </link>
 
     <joint name="${parent}_tv_nav_goal_joint" type="fixed">
-      <origin xyz="0 0.7 0" rpy="0 0 0"/>
+      <origin xyz="0 0.7 0" rpy="0 0 ${M_PI}"/>
       <parent link="tv_link"/>
       <child link="tv_nav_goal_link"/>
     </joint>
