@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ilab">
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_counter.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_chair.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_table.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/coffee_table.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/couch.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/right_shelves.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/tv.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/left_shelves.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/lazy_chair_1.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/lazy_chair_2.urdf.xacro" />
-   <xacro:include filename="$(find rail_collada_models)/urdf/lab.urdf.xacro" />
-  
+  <xacro:include filename="$(find rail_collada_models)/urdf/couch.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/nav_goal.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/right_shelves.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/tv.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/left_shelves.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/lazy_chairs.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/lab.urdf.xacro" />
+
   <xacro:property name="PARENT" value="map" />
   <xacro:property name="FRAME" value="ilab" />
   <xacro:property name="M_PI" value="3.1415926535897931" />
@@ -30,40 +31,40 @@
   </xacro:lab>
 
   <xacro:kitchen_counter parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:kitchen_counter>
   
   <xacro:kitchen_table parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:kitchen_table>
   
   <xacro:coffee_table parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:coffee_table>
 
   <xacro:couch parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:couch>
   
   <xacro:right_shelves parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:right_shelves>
 
   <xacro:tv parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:tv>
 
   <xacro:left_shelves parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:left_shelves>
 
-  <xacro:lazy_chair_1 parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
-  </xacro:lazy_chair_1>
+  <xacro:lazy_chairs parent="${FRAME}">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:lazy_chairs>
 
-  <xacro:lazy_chair_2 parent="${FRAME}">
-    <origin xyz="2.85 5.55 0" rpy="0 0 0" />
-  </xacro:lazy_chair_2>
-
+  <xacro:kitchen_chair parent="${FRAME}">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:kitchen_chair>
 
 </robot>

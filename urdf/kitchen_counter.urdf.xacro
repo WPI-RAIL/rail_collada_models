@@ -1,19 +1,82 @@
 <?xml version="1.0"?>
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="kitchen_counter" params="parent *origin">
-    <joint name="${parent}_kitchen_counter_joint" type="fixed">
-      <xacro:insert_block name="origin" />
-      <parent link="${parent}" />
-      <child link="kitchen_counter_link" />
-    </joint>
 
+    <!--Kitchen Counter -->
+    <joint name="${parent}_kitchen_counter_joint" type="fixed">
+      <origin xyz="1.679 5.873 0" rpy="0 0 ${M_PI}"/>
+      <parent link="${parent}" />
+      <child link="kitchen_counter_link"/>
+    </joint>
     <link name="kitchen_counter_link">
       <visual>
-        <origin xyz="-1.229 .323 0" rpy="0 0 0" />
-        <geometry>
+         <geometry>
           <mesh filename="package://rail_collada_models/meshes/kitchen_counter.dae" />
         </geometry>
       </visual>
     </link>
+
+    <!-- Sink-->
+    <joint name="${parent}_sink_joint" type="fixed">
+      <origin xyz="0 0 0.92" rpy="0 0 0"/>
+      <parent link="kitchen_counter_link" />
+      <child link="sink_link"/>
+    </joint>
+    <link name="sink_link">
+      <visual>
+        <geometry>
+          <box size="0.1 0.1 0.1"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- Sink Nav Goal placed half of Carl's length in front of the middle of the sink-->
+    <joint name="${parent}_sink_nav_goal_joint" type="fixed">
+      <origin xyz="0 0.55 0" rpy="0 0 0"/>
+      <parent link="kitchen_counter_link" />
+      <child link="sink_nav_goal_link"/>
+    </joint>
+    <xacro:nav_goal prefix="sink"/>
+
+    <!-- LEFT -->
+    <joint name="${parent}_kitchen_counter_left_surface_joint" type="fixed">
+      <origin xyz="-0.6 0 0.92" rpy="0 0 0"/>
+      <parent link="kitchen_counter_link" />
+      <child link="kitchen_counter_left_surface_link"/>
+    </joint>
+    <link name="kitchen_counter_left_surface_link">
+      <visual>
+        <geometry>
+          <box size="0.1 0.1 0.1"/>
+        </geometry>
+      </visual>
+    </link>
+    <joint name= "${parent}_kitchen_counter_left_nav_goal_joint" type="fixed">
+      <origin xyz="-.6 0.55 0" rpy="0 0 0"/>
+      <parent link="kitchen_counter_link" />
+      <child link="kitchen_counter_left_nav_goal_link"/>
+    </joint>
+    <xacro:nav_goal prefix="kitchen_counter_left"/>
+
+    <!-- RIGHT -->
+    <joint name="${parent}_kitchen_counter_right_surface_joint" type="fixed">
+      <origin xyz="0.6 0 0.92" rpy="0 0 0"/>
+      <parent link="kitchen_counter_link" />
+      <child link="kitchen_counter_right_surface_link"/>
+    </joint>
+    <link name="kitchen_counter_right_surface_link">
+      <visual>
+        <geometry>
+          <box size="0.1 0.1 0.1"/>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="${parent}_kitchen_counter_right_nav_goal_joint" type="fixed">
+      <origin xyz="0.6 0.55 0" rpy="0 0 0"/>
+      <parent link="kitchen_counter_link" />
+      <child link="kitchen_counter_right_nav_goal_link"/>
+    </joint>    
+    <xacro:nav_goal prefix="kitchen_counter_right"/>
+
   </xacro:macro>
 </root>

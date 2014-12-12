@@ -1,19 +1,30 @@
+<!-- 
+NOT USED
+these should only be kept until russell and dave approve my macro use for the chairs
+-->
+
 <?xml version="1.0"?>
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="lazy_chair_1" params="parent *origin">
     <joint name="${parent}_lazy_chair_1_joint" type="fixed">
-      <xacro:insert_block name="origin" />
+      <origin xyz="3.64 1.1 0" rpy="0 0 0" />
       <parent link="${parent}" />
       <child link="lazy_chair_1_link" />
     </joint>
-
     <link name="lazy_chair_1_link">
       <visual>
-       <origin xyz="-.159 -4.349 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://rail_collada_models/meshes/lazy_chair.dae" />
         </geometry>
       </visual>
     </link>
+
+    <joint name="${parent}_lazy_chair_1_nav_goal" type="fixed">
+      <origin xyz="0 .84 0" rpy="0 0 0"/>
+      <parent link="lazy_chair_1_link"/>
+      <child link="lazy_chair_1_nav_goal_link"/>
+    </joint>
+
+    <xacro:nav_goal prefix="lazy_chair_1"/>
   </xacro:macro>
 </root>

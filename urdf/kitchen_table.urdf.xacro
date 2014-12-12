@@ -1,19 +1,41 @@
 <?xml version="1.0"?>
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="kitchen_table" params="parent *origin">
+
     <joint name="${parent}_kitchen_table_joint" type="fixed">
-      <xacro:insert_block name="origin" />
+      <origin xyz="3.877 5.704 0" rpy="0 0 0" />
       <parent link="${parent}" />
       <child link="kitchen_table_link" />
     </joint>
-
     <link name="kitchen_table_link">
       <visual>
-        <origin xyz="1.111 0.228 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://rail_collada_models/meshes/kitchen_table.dae" />
         </geometry>
       </visual>
     </link>
+
+
+    <joint name="${parent}_kitchen_table_surface_joint" type="fixed">
+      <origin xyz="0 0 0.75" rpy="0 0 0"/>
+      <parent link="kitchen_table_link"/>
+      <child link="kitchen_table_surface_link"/>
+    </joint>
+      <link name="kitchen_table_surface_link">
+      <visual>
+        <geometry>
+          <box size="0.1 0.1 0.1"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- kitchen table nav goal, placed half of carl's length in front of the side near the couch-->
+    <joint name="${parent}_kitchen_table_nav_goal_1_joint" type="fixed">
+      <origin xyz="0 -.75 0" rpy="0 0 0"/>
+      <parent link="kitchen_table_link"/>
+      <child link="kitchen_table_nav_goal_link"/>
+    </joint>
+    <xacro:nav_goal prefix="kitchen_table"/>
+
   </xacro:macro>
 </root>

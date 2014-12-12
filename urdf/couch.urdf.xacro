@@ -9,7 +9,7 @@
 
     <link name="couch_link">
       <visual>
-        <origin xyz="1.755 -2.68 0" rpy="0 0 ${M_PI/2}" />
+        <origin xyz="4.497 2.94 0" rpy="0 0 ${M_PI/2}" />
         <geometry>
           <mesh filename="package://rail_collada_models/meshes/couch.dae" />
         </geometry>

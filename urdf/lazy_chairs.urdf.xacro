@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="lazy_chairs" params="parent *origin">  
+    <xacro:lazy_chair parent="${parent}" num="1">
+      <origin xyz="3.643 1.1 0" rpy="0 0 0" />
+    </xacro:lazy_chair>
+    <xacro:lazy_chair parent="${parent}" num="2">
+      <origin xyz="2.621 1.1 0" rpy="0 0 0" />
+    </xacro:lazy_chair>
+  </xacro:macro>
+
+  <xacro:macro name="lazy_chair" params="parent num *origin">
+    <joint name="${parent}_lazy_chair_${num}_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="lazy_chair_${num}_link" />
+    </joint>
+    <link name="lazy_chair_${num}_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://rail_collada_models/meshes/lazy_chair.dae" />
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="${parent}_lazy_chair_${num}_nav_goal" type="fixed">
+      <origin xyz="0 .84 0" rpy="0 0 0"/>
+      <parent link="lazy_chair_${num}_link"/>
+      <child link="lazy_chair_${num}_nav_goal_link"/>
+    </joint>
+
+    <xacro:nav_goal prefix="lazy_chair_${num}"/>
+  </xacro:macro>
+
+
+</root>

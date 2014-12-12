@@ -2,18 +2,38 @@
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="left_shelves" params="parent *origin">
     <joint name="${parent}_left_shelves_joint" type="fixed">
-      <xacro:insert_block name="origin" />
+      <origin xyz="0.425 0.838 0" rpy="0 0 ${-M_PI/2}" />
       <parent link="${parent}" />
       <child link="left_shelves_link" />
     </joint>
-
     <link name="left_shelves_link">
       <visual>
-        <origin xyz="-2.425 -4.712 0" rpy="0 0 ${-M_PI/2}" />
         <geometry>
           <mesh filename="package://rail_collada_models/meshes/left_shelves.dae" />
         </geometry>
       </visual>
     </link>
+
+    <joint name="${parent}_left_shelves_low_joint" type="fixed">
+      <origin xyz="0 0 0.75" rpy="0 0 0"/>
+      <parent link="left_shelves_link"/>
+      <child link="left_shelves_low_shelf_link"/>
+    </joint>
+      <link name="left_shelves_low_shelf_link">
+      <visual>
+        <geometry>
+          <box size="0.1 0.1 0.1"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="${parent}_left_shelves_nav_goal_joint" type="fixed">
+      <origin xyz="0 0.52 0" rpy="0 0 0"/>
+      <parent link="left_shelves_link"/>
+      <child link="left_shelves_nav_goal_link"/>
+    </joint>
+
+    <xacro:nav_goal prefix="left_shelves" />
+
   </xacro:macro>
 </root>
