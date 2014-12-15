@@ -19,12 +19,7 @@
       <parent link="tv_link"/>
       <child link="tv_surface_link"/>
     </joint>
-      <link name="tv_surface_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.1"/>
-        </geometry>
-      </visual>
+    <link name="tv_surface_link">
     </link>
 
     <joint name="${parent}_tv_nav_goal_joint" type="fixed">

@@ -21,12 +21,7 @@
       <parent link="coffee_table_link"/>
       <child link="coffee_table_surface_link"/>
     </joint>
-      <link name="coffee_table_surface_link">
-      <visual>
-        <geometry>
-          <box size="0.1 0.1 0.1"/>
-        </geometry>
-      </visual>
+    <link name="coffee_table_surface_link">
     </link>
 
     <!-- coffee table nav goal, placed half of carl's length in front of the long side near the coffee_table2-->
