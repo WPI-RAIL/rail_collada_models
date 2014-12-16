@@ -2,7 +2,7 @@
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="tv" params="parent *origin">
     <joint name="${parent}_tv_joint" type="fixed">
-      <origin xyz="0.89 2.1 0" rpy="0 0 ${-M_PI/2}" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="tv_link" />
     </joint>

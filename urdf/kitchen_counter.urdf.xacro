@@ -4,7 +4,7 @@
 
     <!--Kitchen Counter -->
     <joint name="${parent}_kitchen_counter_joint" type="fixed">
-      <origin xyz="1.679 5.873 0" rpy="0 0 ${M_PI}"/>
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="kitchen_counter_link"/>
     </joint>

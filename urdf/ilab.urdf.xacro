@@ -9,7 +9,7 @@
   <xacro:include filename="$(find rail_collada_models)/urdf/right_shelves.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/tv.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/left_shelves.urdf.xacro" />
-  <xacro:include filename="$(find rail_collada_models)/urdf/lazy_chairs.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/lazy_chair.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/lab.urdf.xacro" />
 
   <xacro:property name="PARENT" value="map" />
@@ -27,44 +27,47 @@
   </joint>
 
   <xacro:lab parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="-0.2 -0.15 0" rpy="0 0 0" />
   </xacro:lab>
 
   <xacro:kitchen_counter parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="1.679 5.873 0" rpy="0 0 ${M_PI}"/>
   </xacro:kitchen_counter>
   
   <xacro:kitchen_table parent="${FRAME}">
-
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="3.877 5.704 0" rpy="0 0 0" />
   </xacro:kitchen_table>
   
   <xacro:coffee_table parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="3.345 2.99 0" rpy="0 0 -${M_PI/2}" />
   </xacro:coffee_table>
 
   <xacro:couch parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="4.497 2.94 0" rpy="0 0 ${M_PI/2}" />
   </xacro:couch>
   
   <xacro:right_shelves parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0.425 3.398 0" rpy="0 0 ${-M_PI/2}" />
   </xacro:right_shelves>
 
   <xacro:tv parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0.89 2.1 0" rpy="0 0 ${-M_PI/2}"/>
   </xacro:tv>
 
   <xacro:left_shelves parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0.425 0.838 0" rpy="0 0 ${-M_PI/2}" />
   </xacro:left_shelves>
 
-  <xacro:lazy_chairs parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </xacro:lazy_chairs>
+  <xacro:lazy_chair parent="${FRAME}" suffix="1">
+    <origin xyz="3.64 1.1 0" rpy="0 0 0" />
+  </xacro:lazy_chair>
+
+  <xacro:lazy_chair parent="${FRAME}" suffix="2">
+    <origin xyz="2.621 1.1 0" rpy="0 0 0" />
+  </xacro:lazy_chair>
 
   <xacro:kitchen_chair parent="${FRAME}">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="3.345 5.775 0" rpy="0 0 ${-M_PI/2}" />
   </xacro:kitchen_chair>
 
 </robot>

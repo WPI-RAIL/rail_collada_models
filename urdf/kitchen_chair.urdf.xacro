@@ -2,7 +2,7 @@
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="kitchen_chair" params="parent *origin">
     <joint name="${parent}_kitchen_chair_joint" type="fixed">
-      <origin xyz="3.345 5.775 0" rpy="0 0 ${-M_PI/2}" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="kitchen_chair_link" />
     </joint>

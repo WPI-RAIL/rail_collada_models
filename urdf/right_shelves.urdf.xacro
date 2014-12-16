@@ -2,7 +2,7 @@
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="right_shelves" params="parent *origin">
     <joint name="${parent}_right_shelves_joint" type="fixed">
-      <origin xyz="0.425 3.398 0" rpy="0 0 ${-M_PI/2}" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="right_shelves_link" />
     </joint>

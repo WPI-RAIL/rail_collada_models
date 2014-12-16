@@ -4,7 +4,7 @@
 
     <!-- Coffee table -->
     <joint name="${parent}_coffee_table_joint" type="fixed">
-      <origin xyz="3.345 2.99 0" rpy="0 0 -${M_PI/2}" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="coffee_table_link" />
     </joint>

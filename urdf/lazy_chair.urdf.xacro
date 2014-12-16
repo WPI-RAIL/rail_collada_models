@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="lazy_chair" params="parent suffix *origin">
+    <joint name="${parent}_lazy_chair_joint_${suffix}" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="lazy_chair_link_${suffix}" />
+    </joint>
+
+    <link name="lazy_chair_link_${suffix}">
+      <visual>
+        <geometry>
+          <mesh filename="package://rail_collada_models/meshes/lazy_chair.dae" />
+        </geometry>
+      </visual>
+    </link>
+
+  </xacro:macro>
+</root>

@@ -2,7 +2,7 @@
 <root xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="couch" params="parent *origin">
     <joint name="${parent}_couch_joint" type="fixed">
-      <origin xyz="4.497 2.94 0" rpy="0 0 ${M_PI/2}" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="couch_link" />
     </joint>

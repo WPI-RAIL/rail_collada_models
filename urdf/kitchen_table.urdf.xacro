@@ -3,7 +3,7 @@
   <xacro:macro name="kitchen_table" params="parent *origin">
 
     <joint name="${parent}_kitchen_table_joint" type="fixed">
-      <origin xyz="3.877 5.704 0" rpy="0 0 0" />
+      <xacro:insert_block name="origin" />
       <parent link="${parent}" />
       <child link="kitchen_table_link" />
     </joint>
