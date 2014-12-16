@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find rail_collada_models)/launch/ilab.launch" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rail_collada_models)/rviz/view_ilab.rviz" required="true" />
+</launch>
