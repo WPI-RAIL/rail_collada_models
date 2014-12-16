@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<root xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="kitchen_chair" params="parent *origin">
+    <joint name="${parent}_kitchen_chair_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="kitchen_chair_link" />
+    </joint>
+
+    <link name="kitchen_chair_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://rail_collada_models/meshes/kitchen_chair.dae" />
+        </geometry>
+      </visual>
+    </link>
+  </xacro:macro>
+</root>

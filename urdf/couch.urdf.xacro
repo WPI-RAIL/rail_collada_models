@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <root xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="lab" params="parent *origin">
-    <joint name="${parent}_lab_joint" type="fixed">
+  <xacro:macro name="couch" params="parent *origin">
+    <joint name="${parent}_couch_joint" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent}" />
-      <child link="lab_link" />
+      <child link="couch_link" />
     </joint>
 
-    <link name="lab_link">
+    <link name="couch_link">
       <visual>
         <geometry>
-          <mesh filename="package://rail_collada_models/meshes/lab.dae" />
+          <mesh filename="package://rail_collada_models/meshes/couch.dae" />
         </geometry>
       </visual>
     </link>
