@@ -6,8 +6,9 @@ For full documentation, see [the ROS wiki](http://ros.org/wiki/rail_collada_mode
 
 ### Contributing
 
-rail_collada_models includes both minified versions of the 3D Collada models. To properly contribute after you modify a Collada model, do the following:
+rail_collada_models includes minified versions of the 3D Collada models and their materials. To properly contribute after you modify a Collada model or materials, do the following:
 
+ * `sudo apt-get install jpegoptim`
  * `cd /path/to/rail_collada_models`
  * `./scripts/minify.bash`
 
