@@ -23,7 +23,7 @@
       <child link="sink_link"/>
     </joint>
     <link name="sink_link"/>
-    <xacro:nav_goal parent="sink" child="sink">
+    <xacro:nav_goal parent="kitchen_counter" child="sink">
       <origin xyz="0 0.55 0" rpy="0 0 ${M_PI}"/>
     </xacro:nav_goal>
 

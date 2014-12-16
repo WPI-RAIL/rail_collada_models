@@ -27,7 +27,7 @@
   </joint>
 
   <xacro:lab parent="${FRAME}">
-    <origin xyz="-0.2 -0.15 0" rpy="0 0 0" />
+    <origin xyz="-0.15 0.0 0" rpy="0 0 0" />
   </xacro:lab>
 
   <xacro:kitchen_counter parent="${FRAME}">
