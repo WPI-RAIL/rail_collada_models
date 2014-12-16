@@ -4,7 +4,7 @@
 # go to the meshes folder
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MESHES="$DIR/../meshes"
-MATERIALS="$MESHES/materials"
+MATERIALS="$MESHES/materials/*.jpg"
 cd $MESHES
 
 # remove old minified files
