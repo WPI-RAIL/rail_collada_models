@@ -11,5 +11,5 @@ cd $MESHES
 rm *.min.dae
 
 # re-minify
-for f in *.dae ; do xmllint --noblanks $f > "${f/.dae/.min.dae}" ; done
 jpegoptim $MATERIALS
+for f in *.dae ; do xmllint --noblanks $f > "${f/.dae/.min.dae}" ; done
