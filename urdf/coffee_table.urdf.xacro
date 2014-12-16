@@ -24,14 +24,9 @@
     <link name="coffee_table_surface_link">
     </link>
 
-    <!-- coffee table nav goal, placed half of carl's length in front of the long side near the coffee_table2-->
-    <joint name="${parent}_coffee_table_nav_goal" type="fixed">
+    <xacro:nav_goal parent="coffee_table" child="coffee_table">
       <origin xyz="0 -0.6 0" rpy="0 0 0"/>
-      <parent link="coffee_table_link"/>
-      <child link="coffee_table_nav_goal_link"/>
-    </joint>
-
-    <xacro:nav_goal prefix="coffee_table"/>
+    </xacro:nav_goal>
 
   </xacro:macro>
 </root>

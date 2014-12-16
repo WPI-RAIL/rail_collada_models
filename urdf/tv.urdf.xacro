@@ -22,12 +22,9 @@
     <link name="tv_surface_link">
     </link>
 
-    <joint name="${parent}_tv_nav_goal_joint" type="fixed">
+    <xacro:nav_goal parent="tv" child="tv">
       <origin xyz="0 0.7 0" rpy="0 0 ${M_PI}"/>
-      <parent link="tv_link"/>
-      <child link="tv_nav_goal_link"/>
-    </joint>
-
-    <xacro:nav_goal prefix="tv"/>
+    </xacro:nav_goal>
+    
   </xacro:macro>
 </root>

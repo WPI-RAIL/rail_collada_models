@@ -24,13 +24,9 @@
     <link name="kitchen_table_surface_link">
     </link>
 
-    <!-- kitchen table nav goal, placed half of carl's length in front of the side near the couch-->
-    <joint name="${parent}_kitchen_table_nav_goal_1_joint" type="fixed">
+    <xacro:nav_goal parent="kitchen_table" child="kitchen_table">
       <origin xyz="0 -.75 0" rpy="0 0 0"/>
-      <parent link="kitchen_table_link"/>
-      <child link="kitchen_table_nav_goal_link"/>
-    </joint>
-    <xacro:nav_goal prefix="kitchen_table"/>
+    </xacro:nav_goal>
 
   </xacro:macro>
 </root>

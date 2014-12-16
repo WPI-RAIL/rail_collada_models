@@ -14,13 +14,9 @@
       </visual>
     </link>
 
-    <joint name="${parent}_left_shelves_nav_goal_joint" type="fixed">
+    <xacro:nav_goal parent="left_shelves" child="left_shelves">
       <origin xyz="0 0.52 0" rpy="0 0 ${M_PI}"/>
-      <parent link="left_shelves_link"/>
-      <child link="left_shelves_nav_goal_link"/>
-    </joint>
-
-    <xacro:nav_goal prefix="left_shelves" />
+    </xacro:nav_goal>
 
   </xacro:macro>
 </root>
