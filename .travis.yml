@@ -27,5 +27,7 @@ script:
   - source /opt/ros/hydro/setup.bash
   - catkin_make
   - catkin_make install
+  - cd src/package
   - ./scripts/minify.bash
   - git diff --exit-code
+  - /opt/ros/hydro/share/xacro/xacro.py urdf/ilab.urdf.xacro
