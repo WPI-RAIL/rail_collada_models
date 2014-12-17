@@ -11,7 +11,7 @@
     <link name="kitchen_counter_link">
       <visual>
          <geometry>
-          <mesh filename="package://rail_collada_models/meshes/kitchen_counter.dae" />
+          <mesh filename="package://rail_collada_models/meshes/kitchen_counter.min.dae" />
         </geometry>
       </visual>
     </link>
@@ -23,8 +23,8 @@
       <child link="sink_link"/>
     </joint>
     <link name="sink_link"/>
-    <xacro:nav_goal parent="sink" child="sink">
-      <origin xyz="0 0.55 0" rpy="0 0 ${M_PI}"/>
+    <xacro:nav_goal parent="kitchen_counter" child="sink">
+      <origin xyz="0 -0.55 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
     <!-- LEFT -->
@@ -36,7 +36,7 @@
     <link name="kitchen_counter_left_surface_link">
     </link>
     <xacro:nav_goal parent="kitchen_counter" child="kitchen_counter_left">
-      <origin xyz="-.6 0.55 0" rpy="0 0 ${M_PI}"/>
+      <origin xyz="-.6 -0.55 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
     <!-- RIGHT -->
@@ -48,7 +48,7 @@
     <link name="kitchen_counter_right_surface_link">
     </link>
     <xacro:nav_goal parent="kitchen_counter" child="kitchen_counter_right" >
-      <origin xyz="0.6 0.55 0" rpy="0 0 ${M_PI}"/>
+      <origin xyz="0.6 -0.55 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
   </xacro:macro>

@@ -11,7 +11,7 @@
     <link name="coffee_table_link">
       <visual>
         <geometry>
-          <mesh filename="package://rail_collada_models/meshes/coffee_table.dae" />
+          <mesh filename="package://rail_collada_models/meshes/coffee_table.min.dae" />
         </geometry>
       </visual>
     </link>

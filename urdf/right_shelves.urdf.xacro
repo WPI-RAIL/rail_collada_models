@@ -9,13 +9,13 @@
     <link name="right_shelves_link">
       <visual>
         <geometry>
-          <mesh filename="package://rail_collada_models/meshes/right_shelves.dae" />
+          <mesh filename="package://rail_collada_models/meshes/right_shelves.min.dae" />
         </geometry>
       </visual>
     </link>
 
     <xacro:nav_goal parent="right_shelves" child="right_shelves">
-      <origin xyz="0 0.52 0" rpy="0 0 ${M_PI}"/>
+      <origin xyz="0 -0.52 0" rpy="0 0 0"/>
     </xacro:nav_goal>
   </xacro:macro>
 </root>

@@ -10,7 +10,7 @@
     <link name="couch_link">
       <visual>
         <geometry>
-          <mesh filename="package://rail_collada_models/meshes/couch.dae" />
+          <mesh filename="package://rail_collada_models/meshes/couch.min.dae" />
         </geometry>
       </visual>
     </link>
