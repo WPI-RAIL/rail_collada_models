@@ -10,7 +10,7 @@
     <link name="lazy_chair_link_${suffix}">
       <visual>
         <geometry>
-          <mesh filename="package://rail_collada_models/meshes/lazy_chair.dae" />
+          <mesh filename="package://rail_collada_models/meshes/lazy_chair.min.dae" />
         </geometry>
       </visual>
     </link>

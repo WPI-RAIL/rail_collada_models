@@ -11,7 +11,7 @@
     <link name="kitchen_counter_link">
       <visual>
          <geometry>
-          <mesh filename="package://rail_collada_models/meshes/kitchen_counter.dae" />
+          <mesh filename="package://rail_collada_models/meshes/kitchen_counter.min.dae" />
         </geometry>
       </visual>
     </link>
