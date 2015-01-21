@@ -15,7 +15,7 @@
     </link>
 
     <xacro:nav_goal parent="left_shelves" child="left_shelves">
-      <origin xyz="0 -0.52 0" rpy="0 0 0"/>
+      <origin xyz="0 -0.6 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
   </xacro:macro>

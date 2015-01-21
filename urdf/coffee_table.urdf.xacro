@@ -25,7 +25,7 @@
     </link>
 
     <xacro:nav_goal parent="coffee_table" child="coffee_table">
-      <origin xyz="0 -0.6 0" rpy="0 0 0"/>
+      <origin xyz="0 -0.9 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
   </xacro:macro>

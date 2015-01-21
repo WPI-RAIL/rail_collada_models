@@ -35,7 +35,7 @@
   </xacro:kitchen_counter>
   
   <xacro:kitchen_table parent="${FRAME}">
-    <origin xyz="3.877 5.704 0" rpy="0 0 0" />
+    <origin xyz="3.877 5.66 0" rpy="0 0 ${M_PI/2}" />
   </xacro:kitchen_table>
   
   <xacro:coffee_table parent="${FRAME}">
@@ -60,11 +60,11 @@
 
 <!-- THE CHAIRS FACE THE WRONG DIRECTION STILL-->
   <xacro:lazy_chair parent="${FRAME}" suffix="1">
-    <origin xyz="3.64 1.1 0" rpy="0 0 0" />
+    <origin xyz="3.64 1.1 0" rpy="0 0 ${M_PI}" />
   </xacro:lazy_chair>
 
   <xacro:lazy_chair parent="${FRAME}" suffix="2">
-    <origin xyz="2.621 1.1 0" rpy="0 0 0" />
+    <origin xyz="2.621 1.1 0" rpy="0 0 ${M_PI}" />
   </xacro:lazy_chair>
 
   <xacro:kitchen_chair parent="${FRAME}">
