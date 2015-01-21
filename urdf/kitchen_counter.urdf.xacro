@@ -24,7 +24,7 @@
     </joint>
     <link name="sink_link"/>
     <xacro:nav_goal parent="kitchen_counter" child="sink">
-      <origin xyz="0 -0.55 0" rpy="0 0 0"/>
+      <origin xyz="0 -.95 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
     <!-- LEFT -->
@@ -36,7 +36,7 @@
     <link name="kitchen_counter_left_surface_link">
     </link>
     <xacro:nav_goal parent="kitchen_counter" child="kitchen_counter_left">
-      <origin xyz="-.6 -0.55 0" rpy="0 0 0"/>
+      <origin xyz="-.6 -.95 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
     <!-- RIGHT -->
@@ -48,7 +48,7 @@
     <link name="kitchen_counter_right_surface_link">
     </link>
     <xacro:nav_goal parent="kitchen_counter" child="kitchen_counter_right" >
-      <origin xyz="0.6 -0.55 0" rpy="0 0 0"/>
+      <origin xyz="0.6 -.95 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
   </xacro:macro>
