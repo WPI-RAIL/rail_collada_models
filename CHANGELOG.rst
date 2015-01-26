@@ -2,6 +2,13 @@
 Changelog for package rail_collada_models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.2 (2015-01-26)
+------------------
+* Merge pull request #9 from PeterMitrano/develop
+  flipped chairs/table, also not going through floor now
+* flipped chairs/table, also not going through floor now
+* Contributors: Peter, Russell Toris
+
 0.0.1 (2014-12-18)
 ------------------
 * Merge pull request #8 from PeterMitrano/develop
