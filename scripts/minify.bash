@@ -1,12 +1,11 @@
 #!/bin/bash
 
-
 # go to the meshes folder
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MESHES="$DIR/../meshes"
-cd $MESHES
 
 # remove old minified files
+cd $MESHES
 rm *.min.dae
 
 # re-minify
