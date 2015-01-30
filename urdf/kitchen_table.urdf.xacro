@@ -25,7 +25,7 @@
     </link>
 
     <xacro:nav_goal parent="kitchen_table" child="kitchen_table">
-      <origin xyz="0 -.85 0" rpy="0 0 0"/>
+      <origin xyz="-1.00 0 0" rpy="0 0 -${M_PI/2}"/>
     </xacro:nav_goal>
 
   </xacro:macro>
