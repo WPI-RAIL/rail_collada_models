@@ -16,13 +16,9 @@
       </visual>
     </link>
 
-    <joint name="${parent}_coffee_table_surface_joint" type="fixed">
-      <origin xyz="0 0 0.41" rpy="0 0 0"/>
-      <parent link="coffee_table_link"/>
-      <child link="coffee_table_surface_link"/>
-    </joint>
-    <link name="coffee_table_surface_link">
-    </link>
+    <xacro:surface parent="coffee_table" child="coffee_table">
+      <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    </xacro:surface>
 
     <xacro:nav_goal parent="coffee_table" child="coffee_table">
       <origin xyz="0 -0.9 0" rpy="0 0 0"/>
