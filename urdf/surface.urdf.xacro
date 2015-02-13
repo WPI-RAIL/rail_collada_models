@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="surface" params="parent child *origin">
+
+  	<joint name="${child}_surface_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}_link"/>
+      <child link="${child}_surface_link"/>
+    </joint>
+
+    <link name="${child}_surface_link"/>
+
+  </xacro:macro>
+</root>
