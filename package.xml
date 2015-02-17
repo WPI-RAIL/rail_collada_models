@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rail_collada_models</name>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <description>Collada Models Used and Developed by the RAIL Lab at WPI</description>
 
   <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
