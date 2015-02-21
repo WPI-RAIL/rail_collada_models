@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ilab">
+  <xacro:include filename="$(find rail_collada_models)/urdf/nav_goal.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/surface.urdf.xacro" />  
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_counter.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_chair.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_table.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/coffee_table.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/couch.urdf.xacro" />
-  <xacro:include filename="$(find rail_collada_models)/urdf/nav_goal.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/right_shelves.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/tv.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/left_shelves.urdf.xacro" />
