@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <root xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="surface" params="parent child *origin">
+  <xacro:macro name="surface" params="parent child *origin *box">
 
   	<joint name="${child}_surface_joint" type="fixed">
       <xacro:insert_block name="origin" />
@@ -8,7 +8,14 @@
       <child link="${child}_surface_link"/>
     </joint>
 
-    <link name="${child}_surface_link"/>
+    <link name="${child}_surface_link">
+    	<collision>
+    		<geometry>
+    			<xacro:insert_block name="box"/>
+    		</geometry>
+    	</collision>
+    	
+    </link>
 
   </xacro:macro>
 </root>

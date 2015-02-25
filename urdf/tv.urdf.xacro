@@ -14,13 +14,10 @@
       </visual>
     </link>
 
-    <joint name="${parent}_tv_surface_joint" type="fixed">
+    <xacro:surface parent="tv" child="tv">
       <origin xyz="0 0 0.605" rpy="0 0 0"/>
-      <parent link="tv_link"/>
-      <child link="tv_surface_link"/>
-    </joint>
-    <link name="tv_surface_link">
-    </link>
+      <box size="0.6 0.35 0.05"/>
+    </xacro:surface> 
 
     <xacro:nav_goal parent="tv" child="tv">
       <origin xyz="0 -0.8 0" rpy="0 0 0"/>
