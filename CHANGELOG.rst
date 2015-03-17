@@ -2,6 +2,15 @@
 Changelog for package rail_collada_models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.3 (2015-02-17)
+------------------
+* Merge pull request #10 from PeterMitrano/develop
+  turned table
+* added surface & turned table
+* Merge branch 'develop' of https://github.com/WPI-RAIL/rail_collada_models into develop
+* made kitchen table marker farther and correct direction
+* Contributors: Peter, Russell Toris
+
 0.0.2 (2015-01-26)
 ------------------
 * Merge pull request #9 from PeterMitrano/develop
