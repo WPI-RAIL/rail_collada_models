@@ -4,16 +4,21 @@
     <joint name="${parent}_lazy_chair_joint_${suffix}" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent}" />
-      <child link="lazy_chair_link_${suffix}" />
+      <child link="lazy_chair_${suffix}_link" />
     </joint>
 
-    <link name="lazy_chair_link_${suffix}">
+    <link name="lazy_chair_${suffix}_link">
       <visual>
         <geometry>
           <mesh filename="package://rail_collada_models/meshes/lazy_chair.min.dae" />
         </geometry>
       </visual>
     </link>
+
+    <xacro:surface parent="lazy_chair_${suffix}" child="lazy_chair_${suffix}">
+      <origin xyz="0 0 0.48" rpy="0 0 0"/>
+      <box size="0.5 0.5 0.05"/>
+    </xacro:surface>
 
   </xacro:macro>
 </root>
