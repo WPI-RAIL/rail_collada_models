@@ -28,25 +28,19 @@
     </xacro:nav_goal>
 
     <!-- LEFT -->
-    <joint name="${parent}_kitchen_counter_left_surface_joint" type="fixed">
+    <xacro:surface parent="kitchen_counter" child="kitchen_counter_left">
       <origin xyz="-0.6 0 0.92" rpy="0 0 0"/>
-      <parent link="kitchen_counter_link" />
-      <child link="kitchen_counter_left_surface_link"/>
-    </joint>
-    <link name="kitchen_counter_left_surface_link">
-    </link>
+      <box size="0.5 0.5 0.05"/>
+    </xacro:surface>
     <xacro:nav_goal parent="kitchen_counter" child="kitchen_counter_left">
       <origin xyz="-.6 -.95 0" rpy="0 0 0"/>
     </xacro:nav_goal>
 
     <!-- RIGHT -->
-    <joint name="${parent}_kitchen_counter_right_surface_joint" type="fixed">
+    <xacro:surface parent="kitchen_counter" child="kitchen_counter_right">
       <origin xyz="0.6 0 0.92" rpy="0 0 0"/>
-      <parent link="kitchen_counter_link" />
-      <child link="kitchen_counter_right_surface_link"/>
-    </joint>
-    <link name="kitchen_counter_right_surface_link">
-    </link>
+      <box size="0.5 0.5 0.05"/>
+    </xacro:surface>
     <xacro:nav_goal parent="kitchen_counter" child="kitchen_counter_right" >
       <origin xyz="0.6 -.95 0" rpy="0 0 0"/>
     </xacro:nav_goal>

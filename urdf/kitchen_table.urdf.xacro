@@ -15,14 +15,10 @@
       </visual>
     </link>
 
-
-    <joint name="${parent}_kitchen_table_surface_joint" type="fixed">
-      <origin xyz="0 0 0.75" rpy="0 0 0"/>
-      <parent link="kitchen_table_link"/>
-      <child link="kitchen_table_surface_link"/>
-    </joint>
-    <link name="kitchen_table_surface_link">
-    </link>
+    <xacro:surface parent="kitchen_table" child="kitchen_table">
+      <origin xyz="0 0 0.75" rpy="0 0 -${M_PI/2}"/>
+      <box size="0.8 0.8 0.05"/>
+    </xacro:surface>
 
     <xacro:nav_goal parent="kitchen_table" child="kitchen_table">
       <origin xyz="-1.00 0 0" rpy="0 0 -${M_PI/2}"/>

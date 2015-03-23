@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ilab">
+  <xacro:include filename="$(find rail_collada_models)/urdf/nav_goal.urdf.xacro" />
+  <xacro:include filename="$(find rail_collada_models)/urdf/surface.urdf.xacro" />  
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_counter.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_chair.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/kitchen_table.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/coffee_table.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/couch.urdf.xacro" />
-  <xacro:include filename="$(find rail_collada_models)/urdf/nav_goal.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/right_shelves.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/tv.urdf.xacro" />
   <xacro:include filename="$(find rail_collada_models)/urdf/left_shelves.urdf.xacro" />
@@ -58,7 +59,6 @@
     <origin xyz="0.425 0.838 0" rpy="0 0 ${M_PI/2}" />
   </xacro:left_shelves>
 
-<!-- THE CHAIRS FACE THE WRONG DIRECTION STILL-->
   <xacro:lazy_chair parent="${FRAME}" suffix="1">
     <origin xyz="3.64 1.1 0" rpy="0 0 ${M_PI}" />
   </xacro:lazy_chair>
