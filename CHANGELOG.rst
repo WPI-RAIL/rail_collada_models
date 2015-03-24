@@ -2,6 +2,18 @@
 Changelog for package rail_collada_models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.4 (2015-03-24)
+------------------
+* Merge pull request #12 from PeterMitrano/develop
+  Fixed surfaces on kitchen table and coffee table
+* flipped table surface. added chair surfaces
+* Merge branch 'develop' of https://github.com/WPI-RAIL/rail_collada_models into develop
+* moved table marker closer
+* added sizes of surfaces
+* marker too close for arm
+* added surfaces with macro
+* Contributors: Peter, Russell Toris
+
 0.0.3 (2015-02-17)
 ------------------
 * Merge pull request #10 from PeterMitrano/develop
