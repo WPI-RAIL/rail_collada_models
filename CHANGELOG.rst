@@ -2,6 +2,15 @@
 Changelog for package rail_collada_models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.5 (2016-02-19)
+------------------
+* Update README.md
+* Update package.xml
+* added models
+* added models
+* books
+* Contributors: David Kent, Russell Toris
+
 0.0.4 (2015-03-24)
 ------------------
 * Merge pull request #12 from PeterMitrano/develop
