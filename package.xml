@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rail_collada_models</name>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <description>Collada Models Used and Developed by the RAIL Lab at WPI</description>
 
   <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
@@ -10,8 +10,8 @@
   <license>BSD</license>
 
   <url type="website">http://ros.org/wiki/rail_collada_models</url>
-  <url type="bugtracker">https://github.com/WPI-RAIL/rail_collada_models/issues</url>
-  <url type="repository">https://github.com/WPI-RAIL/rail_collada_models</url>
+  <url type="bugtracker">https://github.com/GT-RAIL/rail_collada_models/issues</url>
+  <url type="repository">https://github.com/GT-RAIL/rail_collada_models</url>
 
   <buildtool_depend>catkin</buildtool_depend>
 
