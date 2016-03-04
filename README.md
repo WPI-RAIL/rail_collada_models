@@ -1,8 +1,7 @@
 rail_collada_models [![Build Status](https://api.travis-ci.org/GT-RAIL/rail_collada_models.png)](https://travis-ci.org/GT-RAIL/rail_collada_models)
 ========
 
-#### Collada Models Used and Developed by the RAIL Lab at WPI
-For full documentation, see [the ROS wiki](http://ros.org/wiki/rail_collada_models).
+#### Collada Models Used and Developed by the RAIL Lab
 
 ### Contributing
 
