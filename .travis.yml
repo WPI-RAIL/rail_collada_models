@@ -33,6 +33,7 @@ script:
   - catkin init
   - catkin config --install
   - catkin build --limit-status-rate 0.1 --no-notify -DCMAKE_BUILD_TYPE=Release
+  - source install/setup.bash
   - cd $TRAVIS_BUILD_DIR
   - ./scripts/minify.bash
   - git diff --exit-code
